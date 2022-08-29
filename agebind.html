@@ -1,0 +1,8 @@
+<script>
+    var stuObj={age:23};
+    var printAge=function(){
+        return this.age;
+    }
+  var bound=  printAge.bind(stuObj);
+  console.log(bound());
+</script>

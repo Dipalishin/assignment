@@ -1,0 +1,8 @@
+<script>
+    var obj={num:3};
+    var addToThis=function(a,b,c,d){
+        return this.num + a+b+c+d;
+    }
+    var arr=[1,22,31,4]
+    console.log(addToThis.apply(obj,arr));
+</script>
