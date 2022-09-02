@@ -1,0 +1,35 @@
+<script>
+    class Student
+    {
+        constructor(name,age,marks)
+        {
+    this.name=name;
+    this.age=age;
+    this.marks=marks;
+
+        }
+
+        setPlacementAge(minage)
+        {
+            return (minMarks)=>{
+if(this.marks>minMarks && this.age>minage)
+{
+console.log(this.name +" "+"is eligible");
+}
+else
+{
+    console.log(this.name +" "+"is  not eligible");
+}    
+} 
+}
+
+}
+    const Seema=new Student('Riya',18,34);
+   Seema.setPlacementAge(18)(40);
+
+const Hiral=new Student('Hiral',19,57);
+Hiral.setPlacementAge(18)(40);
+const Diya=new Student('Diya',31,60);
+Diya.setPlacementAge(18)(40);
+const Siya=new Student('Siya',17,70);
+</script>

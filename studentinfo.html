@@ -1,0 +1,49 @@
+<script>
+    class Student
+    {
+        static count=0;
+constructor(name,age,phoneNo,marks)
+{
+    this.name=name;
+    this.age=age;
+    this.marks=marks;
+    this.phoneNo=phoneNo;
+    Student.countStudent();
+    }   
+    static countStudent()
+{
+         return(Student.count++);
+}     
+ eligible()
+ {
+    if(this.marks>40)
+    console.log(`${this.name} age ${this.age} is eligible`);
+ 
+    else if(this.marks<40)
+
+console.log(`${this.name} age ${this.age} is not eligible`);
+
+
+ }
+ }
+ const Seema=new Student('Riya',18,1234,34);
+
+const Hiral=new Student('Hiya',19,2345,57);
+
+const Dipa=new Student('Diya',16,4567,60);
+
+const Siya=new Student('Siya',17,7891,70);
+
+const Rooh=new Student('Rooh',19,3456,80);
+
+console.log(Student.countStudent());
+
+Riya.eligible();
+
+Hiya.eligible();
+
+Diya.eligible();
+
+Siya.eligible();
+
+Rooh.eligible();</script>
